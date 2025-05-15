@@ -1,0 +1,34 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ddf40df1.css",
+    "main.js": "/static/js/main.5c011dfb.js",
+    "static/js/787.cda612ba.chunk.js": "/static/js/787.cda612ba.chunk.js",
+    "static/media/about.jpg": "/static/media/about.2c4aa42cf947e9c30eb1.jpg",
+    "static/media/11.jpg": "/static/media/11.2eb61f84bcd777e56218.jpg",
+    "static/media/CMI-PY.png": "/static/media/CMI-PY.1f2935bb12529f812ddb.png",
+    "static/media/404.png": "/static/media/404.db36e7f54f8d52ac97e4.png",
+    "static/media/bohe-beldi.jpg": "/static/media/bohe-beldi.ee33d24d39db057b4b5a.jpg",
+    "static/media/English_language.png": "/static/media/English_language.a84b45b8c9ba51523bbd.png",
+    "static/media/Arabic_language.png": "/static/media/Arabic_language.b55bdff9676008c3600d.png",
+    "static/media/2.png": "/static/media/2.d461d9a9be389e51c276.png",
+    "static/media/5.png": "/static/media/5.75ef018e80f2001a21a0.png",
+    "static/media/3.png": "/static/media/3.f766bc21d0273ec9f9d6.png",
+    "static/media/4.png": "/static/media/4.0c6029f1ca946808707c.png",
+    "static/media/Logo.png": "/static/media/Logo.73a6d6ace9787150b40c.png",
+    "static/media/ifassen.png": "/static/media/ifassen.47da5ad2fce0a2d68505.png",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/1.png": "/static/media/1.89a8b1a35c31f02d2930.png",
+    "static/media/blankprofile.webp": "/static/media/blankprofile.efadb13dba95b5bc918b.webp",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "static/media/Flag_of_Morocco.svg.webp": "/static/media/Flag_of_Morocco.svg.d10038377aab31b25efa.webp",
+    "index.html": "/index.html",
+    "main.ddf40df1.css.map": "/static/css/main.ddf40df1.css.map",
+    "main.5c011dfb.js.map": "/static/js/main.5c011dfb.js.map",
+    "787.cda612ba.chunk.js.map": "/static/js/787.cda612ba.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ddf40df1.css",
+    "static/js/main.5c011dfb.js"
+  ]
+}
