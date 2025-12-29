@@ -17,7 +17,7 @@ const blogSchema = new Schema(
     },
     category: { type: String,  },
     tags: [{ type: String ,  }], 
-    image: { type: String , }, // URL de l'image
+    image: { type: String , }, 
     author: {
             type: mongoose.Schema.Types.ObjectId,
            ref: "User",
