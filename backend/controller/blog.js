@@ -134,7 +134,6 @@ router.put(
   })
 );
 
-// Delete blog
 router.delete(
   "/delete-blog/:id",
   isAuthenticated,
@@ -174,7 +173,7 @@ router.delete(
 );
 
 
-// Get all blogs for admin
+
 router.get(
   "/admin-blogs",
   isAuthenticated,
