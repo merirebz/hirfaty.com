@@ -23,7 +23,7 @@ const blogSchema = new Schema(
            ref: "User",
         },  },
   {
-    timestamps: true, // Ajoute les champs createdAt et updatedAt automatiquement
+    timestamps: true, 
   }
 );
 
