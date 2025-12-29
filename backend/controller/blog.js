@@ -31,7 +31,7 @@ router.post(
         category: req.body.category || '',
         tags: req.body.tags,
         author:req.body.author,
-        // image:req.file.filename,
+        
       };
      
       console.log("Headers reçus :", req.headers);
@@ -45,7 +45,7 @@ router.post(
 
       await blog.save();
 
-      console.log("Uploaded file:", req.file); // Vérifie si l'image est bien dans req.file
+      console.log("Uploaded file:", req.file);
 
 // Si une image a été envoyée
 if (req.file) {
