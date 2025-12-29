@@ -13,7 +13,7 @@ const ErrorHandler = require("../utils/ErrorHandler");
 
 router.post(
   "/admin-create-blog",
-  upload.single("image"), // On accepte une seule image
+  upload.single("image"),
   catchAsyncErrors(async (req, res, next) => {
     try {
     
