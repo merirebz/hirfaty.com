@@ -91,7 +91,7 @@ router.get(
   })
 );
 
-// Get single blog
+
 router.get(
   "/get-blog/:id",
   catchAsyncErrors(async (req, res, next) => {
@@ -108,7 +108,7 @@ router.get(
   })
 );
 
-// Update blog
+
 router.put(
   "/update-blog/:id",
   isAuthenticated,
