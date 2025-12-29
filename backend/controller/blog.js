@@ -147,7 +147,7 @@ router.delete(
         return res.status(404).json({ success: false, message: "Blog not found with this id!" });
       }
 
-      // Optionnel : Vérifier si l'utilisateur est l'auteur du blog avant suppression
+      
       if (blogData.author.toString() !== req.user.id) {
         return res.status(403).json({ success: false, message: "Unauthorized! You can only delete your own blog." });
       }
@@ -192,7 +192,7 @@ router.get(
   })
 );
 
-// Update blog images
+
 router.post(
   "/update-blog-images/:id",
   isAuthenticated,
