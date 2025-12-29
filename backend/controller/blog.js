@@ -47,7 +47,7 @@ router.post(
 
       console.log("Uploaded file:", req.file);
 
-// Si une image a été envoyée
+
 if (req.file) {
   const newFilename = `${blog._id}${path.extname(req.file.originalname)}`;
   const newPath = path.join("uploads", newFilename);
@@ -74,7 +74,7 @@ if (req.file) {
 
 
 
-// Get all blogs
+
 router.get(
   "/all-blogs",
   catchAsyncErrors(async (req, res, next) => {
