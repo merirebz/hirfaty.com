@@ -6,7 +6,6 @@ const { isSeller } = require("../middleware/auth");
 const CoupounCode = require("../model/coupounCode");
 const router = express.Router();
 
-// create coupoun code
 router.post(
   "/create-coupon-code",
   isSeller,
@@ -32,7 +31,7 @@ router.post(
   })
 );
 
-// get all coupons of a shop
+
 router.get(
   "/get-coupon/:id",
   isSeller,
@@ -70,7 +69,7 @@ router.delete(
   })
 );
 
-// get coupon code value by its name
+
 router.get(
   "/get-coupon-value/:name",
   catchAsyncErrors(async (req, res, next) => {
