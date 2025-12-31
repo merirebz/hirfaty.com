@@ -6,7 +6,6 @@ const path = require ("path");
 const { upload } = require("../multer");
 const router = express.Router();
 
-// create new message
 router.post(
   "/create-new-message",
   upload.single("images"),
@@ -43,7 +42,7 @@ router.post(
   })
 );
 
-// get all messages with conversation id
+
 router.get(
   "/get-all-messages/:id",
   catchAsyncErrors(async (req, res, next) => {
