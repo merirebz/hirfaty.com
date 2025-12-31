@@ -13,7 +13,7 @@ const fs = require("fs");
 const path = require("path");
 const promoProduct = require("../model/promoProduct");
 
-// create product
+
 router.post(
   "/create-product",
   upload.array("images"),
@@ -212,7 +212,7 @@ router.delete(
   })
 );
 
-// delete PROMO product of a shop
+
 router.delete(
   "/delete-promo-product/:id",
   isSeller,
