@@ -8,7 +8,6 @@ const { isSeller, isAdmin, isAuthenticated } = require("../middleware/auth");
 const router = express.Router();
 const fs = require("fs");
 
-// create event
 router.post(
   "/create-event",
   upload.array("images"),
@@ -39,7 +38,6 @@ router.post(
   })
 );
 
-// get all events
 router.get("/get-all-events", async (req, res, next) => {
   try {
     const events = await Event.find();
@@ -52,7 +50,7 @@ router.get("/get-all-events", async (req, res, next) => {
   }
 });
 
-// get all events of a shop
+
 router.get(
   "/get-all-events/:id",
   catchAsyncErrors(async (req, res, next) => {
@@ -69,7 +67,7 @@ router.get(
   })
 );
 
-// delete event of a shop
+
 router.delete(
   "/delete-shop-event/:id",
   catchAsyncErrors(async (req, res, next) => {
@@ -105,7 +103,7 @@ router.delete(
   })
 );
 
-// all events --- for admin
+
 router.get(
   "/admin-all-events",
   isAuthenticated,
