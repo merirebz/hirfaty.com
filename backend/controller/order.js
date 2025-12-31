@@ -8,14 +8,13 @@ const Shop = require("../model/shop");
 const sendMail = require("../utils/sendMail");
 const Product = require("../model/product");
 
-// create new order
 router.post(
   "/create-order",
   catchAsyncErrors(async (req, res, next) => {
     try {
       const { cart, shippingAddress, user, totalPrice, paymentInfo } = req.body;
 
-      //   group cart items by shopId
+   
       const shopItemsMap = new Map();
 
       for (const item of cart) {
@@ -26,7 +25,7 @@ router.post(
         shopItemsMap.get(shopId).push(item);
       }
 
-      // create an order for each shop
+      
       const orders = [];
 
       for (const [shopId, items] of shopItemsMap) {
@@ -42,7 +41,7 @@ router.post(
     await sendMail({
       email: user.email,
       subject: "confirmation order your Shop",
-      // message: `Hello ${seller.name}, please click on the link to activate your shop: ${activationUrl}`,
+    
       message: `Hello ${user.name}, order confirmation`,
     });
       res.status(201).json({
@@ -55,7 +54,7 @@ router.post(
   })
 );
 
-// get all orders of user
+
 router.get(
   "/get-all-orders/:userId",
   catchAsyncErrors(async (req, res, next) => {
@@ -95,7 +94,7 @@ router.get(
   })
 );
 
-// update order status for seller
+
 router.put(
   "/update-order-status/:id",
   isSeller,
@@ -150,7 +149,7 @@ router.put(
   })
 );
 
-// give a refund ----- user
+
 router.put(
   "/order-refund/:id",
   catchAsyncErrors(async (req, res, next) => {
@@ -176,7 +175,7 @@ router.put(
   })
 );
 
-// accept the refund ---- seller
+
 router.put(
   "/order-refund-success/:id",
   isSeller,
@@ -217,7 +216,7 @@ router.put(
   })
 );
 
-// all orders --- for admin
+
 router.get(
   "/admin-all-orders",
   isAuthenticated,
