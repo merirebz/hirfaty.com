@@ -155,12 +155,11 @@ const BlogDetails = ({ id }) => {
     <span className="cursor-pointer"><i className="fab fa-tiktok"></i></span>
   </div>
 
-  {/* Message */}
   <p className="text-white mb-4 text-center">{t("Stay informed on our latest news!")}</p>
 
-  {/* Formulaire de Newsletter */}
+ 
   <form className="flex flex-col items-center w-full"onSubmit={HandelSubmit}>
-    {/* Champ email */}
+    
     <input
       type="email"
               name="email"
@@ -172,7 +171,7 @@ const BlogDetails = ({ id }) => {
             className="px-4 py-2 rounded-full mb-4 focus:outline-none w-[250px] placeholder:text-center"
     />
     
-    {/* Bouton d'envoi */}
+   
     <button 
       type="submit"
       className="bg-orange-400 text-white px-6 py-2 rounded-full hover:bg-red-700 transition duration-300"
