@@ -93,14 +93,14 @@ const BlogDetails = ({ id }) => {
         <span className="mx-2 text-orange-600 text-xs">▶</span>
         <span className="text-gray-900 font-bold">{title}</span>
       </nav>
-      {/* Contenu du blog */}
+      
       <div className="w-full max-w-2xl bg-white p-6 shadow-lg rounded-md mt-6">
         <p className="text-black-700 leading-relaxed text-justify">{content}</p>
       </div>
 
       <h3 className="text-center text-xl font-semibold mt-4">{t("Share this article")}</h3>
 
-      {/* Section de partage */}
+     
       <div className="flex justify-center space-x-4 mt-6">
         <a
           href={`https://www.facebook.com/sharer/sharer.php?u=${window.location.href}`}
